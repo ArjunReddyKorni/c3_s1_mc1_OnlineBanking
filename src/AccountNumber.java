@@ -7,10 +7,12 @@ public class AccountNumber {
         Math.random();
         Random object = new Random();
 
-        System.out.println("Math.random()*100000000000L = " + Math.random()*100000000000L);
+       // System.out.println("Math.random()*100000000000L = " + Math.random()*100000000000L);
+        String number = "";
         for (int i = 0; i < 12; i++) {
             System.out.print(object.nextLong(9));
-
+            number = number + object.nextInt(9);
+            System.out.println("number = " + number);
         }
 
     }

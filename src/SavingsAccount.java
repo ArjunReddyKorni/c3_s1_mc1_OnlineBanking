@@ -4,9 +4,9 @@ public class SavingsAccount {
 
     public  String getAccountNumber(){
         Random object = new Random();
-        String number;
+        String number = "";
         for (int i = 0; i <12 ; i++)
-            number = number.concat(object.nextLong(9));
+            number = number + object.nextInt(9);
 
 
         return number;
